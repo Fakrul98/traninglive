@@ -25,7 +25,9 @@ $obj = new student();
 	<td><?php echo $i ;?></td>
 	<td><?php echo $value['name'];?></td>
 	<td><?php echo $value['email'];?></td>
-	<td><a href="">update</a>||<a href="">Delete</a></td>
+	<td>
+		<?php echo "<a href ='updateuser.php?action=edit&id=".$value['id']."'>Edit </a>  " ;?> || 
+		<a href="">Delete</a></td>
 </tr> 
 <?php
 }
